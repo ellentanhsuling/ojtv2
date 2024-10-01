@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Blueprint Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/7.3.0/docx.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Blueprint Generator</h1>
+        <div class="input-section">
+            <label for="job-title">Enter Job Title:</label>
+            <input type="text" id="job-title" placeholder="e.g., Software Engineer">
+            <button onclick="generateBlueprint()">Generate Blueprint</button>
+        </div>
+        <div class="output-section">
+            <h2>Job Blueprint:</h2>
+            <div id="blueprint-output"></div>
+            <button id="download-btn" style="display: none;" onclick="downloadAsWord()">Download as Word</button>
+            <div class="feedback-section" id="feedback-section" style="display: none;">
+                <h3>Was this blueprint helpful?</h3>
+                <button onclick="provideFeedback(true)" class="feedback-btn"><i class="fas fa-thumbs-up"></i></button>
+                <button onclick="provideFeedback(false)" class="feedback-btn"><i class="fas fa-thumbs-down"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

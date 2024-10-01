@@ -1,0 +1,30 @@
+/* ... (previous styles remain the same) ... */
+
+#download-btn {
+    margin-top: 20px;
+    background-color: #4CAF50;
+}
+
+#download-btn:hover {
+    background-color: #45a049;
+}
+
+li .feedback-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+li .feedback-btn:hover {
+    opacity: 0.7;
+}
+
+li .fa-thumbs-up {
+    color: #4CAF50;
+}
+
+li .fa-thumbs-down {
+    color: #f44336;
+}
