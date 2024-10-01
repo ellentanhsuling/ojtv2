@@ -1,4 +1,4 @@
-const API_KEY = 'AIzaSyC5W0DQ3DMS24tEg5SAraj32Zfl8Ie00XE'; // Replace with your actual Gemini API key
+const API_KEY = 'API KEY'; // Replace with your actual Gemini API key
 const API_ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
 
 let currentBlueprintData = null;
